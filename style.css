@@ -18,18 +18,32 @@ body {
 }
 header {
   grid-area: header;
-  background-color: burlywood;
+  background-image: url(pic/sample.jpeg);
+
+  /* text-align: center;
+  margin: auto; */
+  
+
+}
+.title{
+  font-size: xx-large;
+  text-align: center;
+  margin-top: 50px;
 }
 main {
   grid-area: center;
   border: solid 1px;
+  
 }
 nav {
   grid-area: Navigation;
   border: solid 1px;
 }
+a{
+  text-decoration:none;
+}
 li{
-  text-decoration: none;
+  padding: 5px;
 }
 aside {
   grid-area: right;
@@ -39,7 +53,11 @@ footer {
   grid-area: footer;
   background-color: burlywood;
 }
-line
+.small{
+  text-align: center;
+  margin-top: 20px;
+}
+line{
 @media screen and (max-width: 1000px) {
   body {
       grid-template:
@@ -48,5 +66,6 @@ line
           "Navigation"
           "right "
           "footer" 300px;
+        }
   }
 }
